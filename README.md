@@ -17,10 +17,10 @@ This is a simple notes app developed using Django. It allows users to create and
 
 ## Output Screenshots
 
-### 1.Log In Page
+### 1. Log In Page
 ![Screenshot 2023-05-05 192632](https://user-images.githubusercontent.com/89800924/236488998-89c562dc-b200-40cb-b371-a85add020e27.png)
 
-### 2.Sign Up Page
+### 2. Sign Up Page
 ![Screenshot 2023-05-05 193454](https://user-images.githubusercontent.com/89800924/236489188-a0f6dea5-6c1c-4756-938e-d4916061a74b.png)
 
 ### 3. All Notes Page
