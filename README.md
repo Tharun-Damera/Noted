@@ -1,4 +1,4 @@
-# Notes-App
+# Noted
 This is a simple notes app developed using Django. It allows users to create and store notes in a secure way. The app provides a user-friendly interface for creating, editing, and deleting notes.
 
 ## Features
