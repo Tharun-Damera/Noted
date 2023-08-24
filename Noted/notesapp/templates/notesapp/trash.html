@@ -1,0 +1,29 @@
+{% extends 'notesapp/home.html' %}
+{% load static %}
+
+
+{% block general %}
+<br>
+{% if trash_list %}
+<div class="container all-notes">
+
+    {% for note in trash_list %}
+
+    <div class="card box shadow-lg">
+        <div class="card-body">
+            <h3>{{note.title}}</h3>
+                {{note.content}}
+                <div class="icons">
+                    <a href="{% url 'notesapp:delete_trash' id=note.id %}" class="trash-icon">
+                        <i class="material-icons delete-icon">delete</i>
+                    </a>
+                </div>
+        </div>
+    </div>
+    {% endfor %}
+
+</div>
+{% endif %}
+
+
+{% endblock %}

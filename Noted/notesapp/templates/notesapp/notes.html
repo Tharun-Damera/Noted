@@ -1,0 +1,45 @@
+{% extends 'notesapp/home.html' %}
+{% load static %}
+
+
+{% block general %}
+
+    <br>
+
+        <div class="container all-notes">
+
+    
+            {% if notes_list %}
+            {% for note in notes_list %}
+
+            <div class="card box shadow-lg">
+                <div class="card-body">
+                    
+                    <div class="text">
+                        <h3 class="title">{{note.title}}</h3>
+                        {{note.content}}
+                    </div>
+    
+                    <div class="icons">
+                        <a href="{% url 'notesapp:update' id=note.id %}">
+                            <i class="material-icons edit-icon">edit</i>
+                        </a>
+                        <a href="{% url 'notesapp:move_to_trash' id=note.id %}" class="trash-icon">
+                            <i class="material-icons delete-icon">delete</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            {% endif %}
+
+            <div>
+                <a href="{% url 'notesapp:addnote' %}">
+                  <i class="material-icons  plus-box">add_circle</i>
+                </a>
+            </div>
+            
+        </div>
+    
+
+{% endblock %}

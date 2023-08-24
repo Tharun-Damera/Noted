@@ -1,0 +1,18 @@
+{% extends 'notesapp/home.html' %}
+{% load static %}
+
+
+{% block general %}
+    <div class="container note-form">
+        <h1>Update Note</h1>
+        <br>
+        <form method="POST">
+            {% csrf_token %}
+            {{form.title}}
+            <br>
+            {{form.content}}
+            <br>
+            <input type="submit" class="btn orange-btn" value="UPDATE">
+        </form>
+    </div>
+{% endblock %}
