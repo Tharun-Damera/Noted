@@ -17,6 +17,7 @@ This is a simple notes app developed using Django. It allows users to create and
 
 ## Deployed Application
 Welcome to "Noted" – an interactive web application built to streamline note-taking and organization. Create, edit, and manage your notes effortlessly with our user-friendly interface.
+
 [Visit "Noted"](https://tharundamera.pythonanywhere.com/)
 
 Note: This application is hosted on PythonAnywhere's free tier, which may have certain limitations.
